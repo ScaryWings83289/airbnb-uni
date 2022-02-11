@@ -15,12 +15,28 @@ A simple landing Page of airbnb made using ReactJS, Material-UI and SCSS for sty
 
 ---
 
-## Quick Start
+# **Scripts**
 
-Clone the repository and do following:
+**Cloning the repo**
 
 ```bash
-npm install or yarn install
-
-# Client runs on http://localhost:3000
+git clone https://github.com/ScaryWings83289/airbnb-uni.git
 ```
+
+---
+
+**Install the dependencies**
+
+```bash
+npm install
+```
+
+---
+
+**Starting the frontend server**
+
+```bash
+npm start
+```
+
+---
