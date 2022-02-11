@@ -1,17 +1,22 @@
+// Libraries
 import React from "react";
-import "./App.css";
 
+// Styles
+import "./App.scss";
+
+// Components
 import Header from "./components/Header";
-import Body from "./components/Banner";
+import Banner from "./components/Banner";
+import Explore from "./components/Explore";
 
-function App() {
+const App = () => {
   return (
-    <div className='wrapper'>
+    <>
       <Header />
-      <Body />
-      <div className='dummy'>Hello</div>
-    </div>
+      <Banner />
+      <Explore />
+    </>
   );
-}
+};
 
 export default App;
