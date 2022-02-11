@@ -14,31 +14,41 @@ import { ReactComponent as Logo } from "./../../assets/logoDark.svg";
 
 const HeaderScroll = () => {
   return (
-    <div className='headerScroll'>
-      <div className='logo'>
-        <Logo />
-        airbnb
+    <>
+      <div className='headerScroll'>
+        <div className='logo'>
+          <Logo />
+          airbnb
+        </div>
+        <ul className='contents'>
+          <div className='searchContainer'>
+            <input type='text' placeholder='Start your search' name='search' />
+            <button>
+              <SearchIcon />
+            </button>
+          </div>
+          <div className='last'>
+            <a href='/' className='link-item'>
+              Become a host
+            </a>
+            <a href='/' className='link-item'>
+              <LanguageIcon />
+            </a>
+            <div className='drops'>
+              <UserDropdown />
+            </div>
+          </div>
+        </ul>
       </div>
-      <ul className='contents'>
+      <div className='headerScrollSmall'>
         <div className='searchContainer'>
           <input type='text' placeholder='Start your search' name='search' />
           <button>
             <SearchIcon />
           </button>
         </div>
-        <div className='last'>
-          <a href='/' className='link-item'>
-            Become a host
-          </a>
-          <a href='/' className='link-item'>
-            <LanguageIcon />
-          </a>
-          <div className='drops'>
-            <UserDropdown />
-          </div>
-        </div>
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 

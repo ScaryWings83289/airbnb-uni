@@ -52,14 +52,41 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .banner {
+    h5 {
+      margin-left: 20px;
+    }
+
+    button {
+      margin-left: 20px;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 900px and up) */
 @media only screen and (min-width: 900px) {
+  .banner {
+    h5 {
+      margin-left: 40px;
+    }
+
+    button {
+      margin-left: 40px;
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .banner {
+    h5 {
+      margin-left: 80px;
+    }
+
+    button {
+      margin-left: 80px;
+    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1536px and up) */

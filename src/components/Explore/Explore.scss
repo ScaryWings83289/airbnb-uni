@@ -55,14 +55,23 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .explore {
+    padding: 20px !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 900px and up) */
 @media only screen and (min-width: 900px) {
+  .explore {
+    padding: 40px !important;
+  }
 }
 
 /* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .explore {
+    padding: 80px !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1536px and up) */

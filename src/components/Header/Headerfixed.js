@@ -46,11 +46,20 @@ const HeaderFixed = () => {
             <UserDropdown />
           </div>
         </ul>
+        <div className='contentsSmall'>
+          <a href='/' className='link-item'>
+            Become a host
+          </a>
+          <a href='/' className='link-item'>
+            <LanguageIcon />
+          </a>
+          <UserDropdown />
+        </div>
       </div>
       <Grid container className='search'>
         <Grid item lg={3.5}>
           <Box sx={{ py: 2, px: 4 }} className='location'>
-            <label for='location'>Location</label>
+            <label htmlFor='location'>Location</label>
             <input
               id='location'
               type='search'
@@ -61,20 +70,20 @@ const HeaderFixed = () => {
         </Grid>
         <Grid item lg={2.5}>
           <Box sx={{ p: 2 }} className='location'>
-            <label for='location'>Check in</label>
+            <label htmlFor='location'>Check in</label>
             <input id='location' type='date' name='check in' />
           </Box>
         </Grid>
         <Grid item lg={2.5}>
           <Box sx={{ p: 2 }} className='location'>
-            <label for='location'>Check out</label>
+            <label htmlFor='location'>Check out</label>
             <input id='location' type='date' name='check out' />
           </Box>
         </Grid>
         <Grid item lg={3.5}>
           <Box sx={{ p: 2 }} className='guest'>
             <div className='location'>
-              <label for='guest'>Guest</label>
+              <label htmlFor='guest'>Guest</label>
               <input
                 id='guest'
                 type='text'
@@ -88,6 +97,21 @@ const HeaderFixed = () => {
           </Box>
         </Grid>
       </Grid>
+      <div className='searchSmall'>
+        <div className='links'>
+          {links.map((data, index) => (
+            <a key={`link${index + 1}`} href={data.to}>
+              {data.label}
+            </a>
+          ))}
+        </div>
+        <div className='searchContainer'>
+          <input type='text' placeholder='Start your search' name='search' />
+          <button>
+            <SearchIcon />
+          </button>
+        </div>
+      </div>
     </>
   );
 };
